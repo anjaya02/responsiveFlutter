@@ -12,7 +12,7 @@ class Summary extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool isDesktop = Responsive.isDesktop(context);
     return Container(
-      decoration: !isDesktop ? BoxDecoration(color: cardBgColor) : null,
+      decoration: !isDesktop ? const BoxDecoration(color: cardBgColor) : null,
       child: const Padding(
         padding: EdgeInsets.all(20),
         child: SingleChildScrollView(
